@@ -1,0 +1,22 @@
+name: Publish Dry Run
+
+on: workflow_dispatch
+
+jobs:
+  publish-dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 12
+
+      - run: yarn install --frozen-lockfile
+
+      - uses: JS-DevTools/npm-publish@v1
+        id: deploy
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: "public"
+          dry-run: true
