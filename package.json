@@ -1,0 +1,8 @@
+{
+  "name": "@yiphapp/eslint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yiphapp/eslint-config.git",
+  "author": "BetaFolf <beta@betafolf.dev>",
+  "license": "MIT"
+}
