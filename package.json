@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "https://github.com/yiphapp/eslint-config.git",
   "author": "BetaFolf <beta@betafolf.dev>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "husky": "^8.0.1"
+  }
 }
