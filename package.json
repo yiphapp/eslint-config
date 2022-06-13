@@ -1,6 +1,6 @@
 {
   "name": "@yiphapp/eslint-config",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "main": "index.js",
   "repository": "https://github.com/yiphapp/eslint-config.git",
   "author": "BetaFolf <beta@betafolf.dev>",
@@ -12,5 +12,20 @@
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "husky": "^8.0.1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8",
+    "prettier": ">= 2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.1"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint-config-prettier": "^8.5.0"
   }
 }
